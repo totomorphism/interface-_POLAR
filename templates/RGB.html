@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Composantes RGB Originales</title>
+</head>
+
+<body>
+    <nav>
+        <h1> POLAR </h1>
+    </nav>
+    <div>
+        <h2>Composantes RGB de l'image </h2>
+        <p>Nombre d'acquisitions: {{ acquisitions }}</p>
+        <p>Temps d'exposition: {{ exposition_time }}</p>
+        {% for image_brute in image_brute %} <!-- boucle qui itère sur les chemins des différentes composantes-->
+        <img src="{{ image_brute }}" alt="Original RGB Component">
+        {% endfor %}
+    </div>
+</body>
+
+</html>

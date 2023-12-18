@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Résultat</title>
+</head>
+
+<body>
+    <nav>
+        <h1> POLAR </h1>
+    </nav>
+    <div>
+        <h2>Résultat</h2>
+        <p>Nombre d'acquisitions: {{ acquisitions }}</p>
+        <p>Temps d'exposition: {{ exposition_time }}</p>
+        <img src="{{ image_brute }}" alt="Result Image">
+        <a href="{{ url_for('RGB')}}"><button type="button"> version RGB</button></a>
+    </div>
+</body>
+
+</html>

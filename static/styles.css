@@ -1,0 +1,53 @@
+:root {
+    /* Définissez vos couleurs ici */
+    --Border-Secondary: #ffffff;
+    --Background-Secondary: #5b21ec;
+    --Navbar-Title-Color: #ffffff;
+    --Navbar-Title-Size: 78px;
+    /* Ajoutez cette ligne pour définir la couleur du titre de la navbar */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+i {
+    font-size: 100px;
+}
+
+.corps {
+    margin: 5px;
+}
+
+.corps2 {
+    margin: 7px;
+}
+
+#logo {
+    width: 200px;
+    height: 200px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 20px 80px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid var(--Border-Secondary);
+    background: var(--Background-Secondary);
+    color: var(--Navbar-Title-Color);
+    /* Ajoutez cette ligne pour définir la couleur du texte de la navbar */
+}
+
+.navbar h2 {
+    font-size: var(--Navbar-Title-Size);
+}
